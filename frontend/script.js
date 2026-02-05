@@ -90,7 +90,7 @@ async function submitEvaluation() {
   formData.append("file", fileInput.files[0]);
 
   // 🔹 fire backend request (do not block redirect)
-  fetch("http://127.0.0.1:5000/evaluate", {
+  fetch("https://rankpred.onrender.com/evaluate", {
     method: "POST",
     body: formData
   }).catch(() => {

@@ -13,7 +13,7 @@ if (!exam || !roll) {
   statusMsg.textContent = "Result details not provided.";
 } else {
   fetch(
-    `http://127.0.0.1:5000/result?exam=${encodeURIComponent(exam)}&roll=${encodeURIComponent(roll)}`
+    `https://rankpred.onrender.com/result?exam=${encodeURIComponent(exam)}&roll=${encodeURIComponent(roll)}`
   )
     .then(res => res.json())
     .then(data => {
