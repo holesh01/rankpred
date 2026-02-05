@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Evaluate | RankPred</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1 id="examTitle">Evaluation</h1>
+</header>
+
+<div class="container">
+
+  <button onclick="goBack()">⬅ Back</button>
+
+  <h2>Candidate Details</h2>
+
+  <input type="text" id="name" placeholder="Candidate Name">
+  <input type="text" id="roll" placeholder="Roll Number">
+
+  <select id="category">
+    <option value="">Select Category</option>
+    <option>UR</option>
+    <option>EWS</option>
+    <option>OBC</option>
+    <option>SC</option>
+    <option>ST</option>
+  </select>
+
+  <select id="gender">
+    <option value="">Select Gender</option>
+    <option>Male</option>
+    <option>Female</option>
+  </select>
+
+  <select id="state">
+    <option value="">Select State / UT</option>
+    <option>Andhra Pradesh</option>
+    <option>Arunachal Pradesh</option>
+    <option>Assam</option>
+    <option>Bihar</option>
+    <option>Chhattisgarh</option>
+    <option>Delhi</option>
+    <option>Gujarat</option>
+    <option>Haryana</option>
+    <option>Karnataka</option>
+    <option>Maharashtra</option>
+    <option>Rajasthan</option>
+    <option>Tamil Nadu</option>
+    <option>Uttar Pradesh</option>
+    <option>West Bengal</option>
+    <option>Jammu and Kashmir</option>
+    <option>Ladakh</option>
+    <option>Puducherry</option>
+  </select>
+
+  <h2>Upload Response Sheet</h2>
+  <input type="file" id="responseFile" accept=".html">
+
+  <br><br>
+  <button type="button" onclick="submitEvaluation()">Evaluate</button>
+
+
+  <p id="status"></p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

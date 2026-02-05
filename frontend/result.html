@@ -1,0 +1,83 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Result | RankPred</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>RankPred</h1>
+</header>
+
+<div class="container">
+  <h2>Result Page</h2>
+
+  <p style="text-align:center;font-size:18px;">
+    ✅ Welcome to Result Page
+  </p>
+
+  <div class="btn-row">
+    <button class="secondary" onclick="goHome()">Home</button>
+  </div>
+</div>
+
+<script>
+  function goHome() {
+    window.location.href = "index.html";
+  }
+</script>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Result | RankPred</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>RankPred</h1>
+</header>
+
+<div class="container">
+
+  <p id="statusMsg" style="text-align:center;margin-bottom:15px;">
+    Loading result...
+  </p>
+
+  <!-- HEADER INFO -->
+  <div class="candidate-card">
+    <h2 id="examName"></h2>
+    <p><strong>Name:</strong> <span id="rName"></span></p>
+    <p><strong>Roll No:</strong> <span id="rRoll"></span></p>
+  </div>
+
+  <!-- SUBJECT TABLE -->
+  <h2 style="text-align:center;">Subject Wise Marks Details</h2>
+
+  <table class="subject-table">
+    <thead>
+      <tr>
+        <th>Subject</th>
+        <th>Attempt</th>
+        <th>NA</th>
+        <th>R</th>
+        <th>W</th>
+        <th>Marks</th>
+      </tr>
+    </thead>
+    <tbody id="subjectTableBody"></tbody>
+  </table>
+  <div class="btn-row">
+  <button class="secondary" onclick="goHome()">Home</button>
+</div>
+
+</div>
+
+
+<script src="result.js"></script>
+</body>
+</html>
